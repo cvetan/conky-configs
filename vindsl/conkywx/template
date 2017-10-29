@@ -1,0 +1,16 @@
+${voffset 0}${alignc 10}${font DroidSansFallback:bold:size=10}${color5}Belgrade, Serbia${font}
+${voffset 6}${goto 34}${font Weather:size=44}${color6}y${font}
+${voffset -58}${font RadioSpace:size=33}${color6}${alignc}[PT]${font}
+${voffset 2}${alignc -5}${font}${font DroidSansFallback:bold:size=7.4}${color5}Feels${offset 3}like${offset 1}:${offset 1}${color6}[FL]${offset 3}${color5}/${offset 3}${color6}[FCTT]${font}
+${voffset -40}${goto 203}${font DroidSansFallback:bold:size=8.75}${color6}[D1T]${font}
+${voffset 0}${goto 204}${font DroidSansFallback:bold:size=7.3}${color5}CoR${offset 1}:${offset 1}${color6}[D1P]${font}
+${voffset -45}${goto 188}${font KRARound:size=41.5}${color6}I${font}
+${voffset 6}${font Ubuntu:size=22.75}${color5}${alignc}[CT]${font}
+${voffset 7}${alignc 6}${font}${font DroidSansFallback:bold:size=8}${color5}Sunrise${offset 1}:${offset 1}${color6}[SR]${offset 6}${color5}Sunset${offset 1}:${offset 1}${color6}[SS]${font}
+${voffset 8}${goto 85}${font DroidSansFallback:bold:size=7.55}${color5}Humidity ${offset 1}:${offset 2}${color6}[HM]${font}${voffset 11}${goto 84}${font DroidSansFallback:bold:size=7.55}${color5}Pressure${offset 1}:${offset 2}${color6}[BR]${font}${voffset 11}${goto 84}${font DroidSansFallback:bold:size=7.55}${color5}BarTrend:${offset 3}${offset 2}${color6}[FCTP]${font}${voffset 11}${goto 84}${font DroidSansFallback:bold:size=7.55}${color5}Moonrise ${offset 1}:${color6}[MR]${font}${voffset 11}${goto 85}${font DroidSansFallback:bold:size=7.55}${color5}Moonset${offset 1}:${color6}[MS]${font}
+${voffset -61}${goto 16}${font ConkyWindNESW:size=41.6}${color6}[BF]${font}${voffset -36}${goto 196}${font MoonPhases:size=35}${color6}[MIF]${font}${voffset -36}${goto 198}${font MoonPhases:size=35}${color6}8${font}
+${voffset -1}${goto 18}${font DroidSansFallback:bold:size=8.45}${color3}[WS] ${goto 193}[MP]${font}
+${voffset 8}${goto 25}${font DroidSans:bold:size=8.5}${color5}[D2D]${goto 85}[D3D]${goto 144}[D4D]${goto 201}[D5D]${font}
+${voffset 2}${goto 23}${font ConkyWeather:size=32}${color6}[D2F]${goto 83}[D3F]${goto 142}[D4F]${goto 200}[D5F]${font}
+${voffset 1}${goto 25}${font DroidSans:bold:size=8.5}${color3}[D2T]${goto 85}[D3T]${goto 144}[D4T]${goto 201}[D5T]${font}
+${voffset -1}${goto 24}${font DroidSans:bold:size=8.45}${color5}CoR${offset 1}:${offset 1}${color3}[D2P]${goto 84}${color5}CoR${offset 1}:${offset 1}${color3}[D3P]${goto 144}${color5}CoR${offset 1}:${offset 1}${color3}[D4P]${goto 201}${color5}CoR${offset 1}:${offset 1}${color3}[D5P]${font}
