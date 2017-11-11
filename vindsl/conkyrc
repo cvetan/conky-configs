@@ -150,8 +150,10 @@ color0 White
 color1 Ivory
 color2 Ivory2
 color3 Ivory3
-color4 brown1 #d11c2d
-color5 brown3
+#color4 brown1 #d11c2d
+color4 CornflowerBlue
+#color5 brown3
+color5 RoyalBlue
 color6 Gray
 color7 AntiqueWhite4
 color8 DarkSlateGray
@@ -168,8 +170,10 @@ lua_draw_hook_pre draw_bg
 ## Load Lua for bargraphs (required).
 ## Set the path to your script here.
 #
-lua_load ~/.conky/bargraph_small.lua
-lua_draw_hook_post main_bars
+
+#lua_load ~/.conky/bargraph_small.lua
+#lua_draw_hook_post main_bars
+lua_load ~/.conky/conkywx.lua
 
 ####
 ## Installed fonts (required).
@@ -282,3 +286,11 @@ ${voffset -80}${font CutOutsFor3DFX:size=67}${color4}${alignc 99}2${font}
 ## Uncomment for "MONDAY = First Day-of-the-Week" valid Jun.2013 - Dec.2014 (use mono fonts only)
 ## Manually tweaked for proper alignment of annoying months with six calendar weeks.
 ${if_match "${time %b %G}"=="Sep 2013"}${voffset -76}${else}${if_match "${time %b %G}"=="Dec 2013"}${voffset -76}${else}${if_match "${time %b %G}"=="Mar 2014"}${voffset -76}${else}${voffset -70}${endif}${endif}${endif}${font DroidSansMono:size=7.55}${color3}${execpi 60 VinDSL_Cal_9=`date +%-d`; ncal -M -C -h | sed -e 's/\r//g' -e 's/^/ /g' -e '1d' -e s/^/"\$\{offset 100"\}/ -e 's/\<'"$VinDSL_Cal_9"'\>/${color4}&${color3}/'}
+
+${lua main -n bargraph -p 82,139 -w 190 -s 3 -f cpu -a cpu1}
+${lua main -n bargraph -p 82,153 -w 190 -s 3 -f cpu -a cpu2}
+${lua main -n bargraph -p 82,166 -w 190 -s 3 -f cpu -a cpu3}
+${lua main -n bargraph -p 82,179 -w 190 -s 3 -f cpu -a cpu4}
+${lua main -n bargraph -p 24,230 -w 248 -s 3 -f memperc}
+${lua main -n bargraph -p 24,273 -w 248 -s 3 -f fs_used_perc -a /}
+${lua main -n bargraph -p 24,300 -w 248 -s 3 -f fs_used_perc -a /home}
